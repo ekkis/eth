@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+
+# returns the address for a given private key
+import eth
+
+pk = eth.arg(1)
+print(eth.pk2addr(pk)['address'])

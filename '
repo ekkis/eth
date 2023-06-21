@@ -1,0 +1,38 @@
+#!/usr/bin/env python
+
+# this script generates balances for a list of addresses or private keys
+# piped in e.g.
+#
+#   cat mylist.txt |$0 vow
+#
+# or by exploring all the derivation paths, given a secret. the script
+# can be bracketed in the following form:
+#
+#	export BIP39=...
+#   $0 vow 10-20 -z
+#
+# offsets may be passed in the forms: m, m-n, m- and -n
+# the form m- stops on a zero balance.  the -z parameter
+# may be passed to suppress zero-balance listings
+#
+# it can also be used to query a single address:
+#
+# $0 0x... vow
+
+import os
+import sys
+import eth
+import random
+
+eth.ctrlc()
+n = int(eth.arg(1, None, 'Supply a block size'))
+r = []
+for ln in sys.stdin:
+	s = ln.strip()
+	if s: r.append(s)
+
+# random.shuffle(r)
+print(len(r), n, len(r) // n)
+print(range((len(r) // n) + 1 if len(r) % n else 0))
+for i in range(len(r) // n + 1 if len(r) % n else 0):
+	print(r[i * n:i*n+n])

@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+
+#
+# SYNOPSIS
+#
+# Converts a BIP39 phrase to an extended private key
+#
+# DESCRIPTION
+#
+# The BIP39 can be picked up from the environment or passed as the
+# second parameter, where the first is a derivation path and defaults to
+# m/44'/60'/0'/0/0.  the derivation path may be pass in as a digit
+# signifying the index to the above base
+#
+
+import os
+import sys
+import eth
+
+DP = sys.argv[1] if len(sys.argv) > 1 else 0
+secret = sys.argv[2] if len(sys.argv) > 2 else os.environ.get('BIP39')
+# print(eth.child(eth.key(secret)))
+n = eth.node(DP, secret)
+from pprint import pprint
+pprint({k: n[k] for k in ('pk', 'address', 'path', 'xprv')})

@@ -1,0 +1,342 @@
+0x7754e5fe1ed87edc841e01d7682493288f138dc2fca2156d8cfd9ffd7132c7e5: 60407.0
+ - fuel sent: 0x68df95e3b202c10283bf50b4ad67df940d1bbb6a73f4031aaa43b80c090bfb49
+ - waiting on tx.... [success]
+tokens sent to [m/44'/60'/0'/0/480]: 0x07e92243fd0d7f87a399fa32ba747f34e695ea71abbbd2dc18f5332a3da33878
+ - waiting on tx.... [success]
+ - fuel returned: 0x4381894b4b8ad340c09c343ee4df52547041f2bb54413cf95571de2c568917a4
+ - sleeping [71 seconds]
+0x6d0de0f29fc505c68c9639eb535bc075fa85b273bd5fafb346bcba259117ce77: 8936.0
+ - fuel sent: 0xc37f31116cb043b343798452b682950c3671f232c39f08192c8e3691f93244a0
+ - waiting on tx.... [success]
+tokens sent to [m/44'/60'/0'/0/481]: 0xdee8eb310ff40e5dced61c9522ac0e959c43aacd77fd9143869844f7fa04fe98
+ - waiting on tx............ [failed]
+0x7ecd2ad9fe1619565e1387626180b685cbce384eb94191158999a4ec6d9cfd5f: 86436.0
+ - fuel sent: 0x216d61692c46d2de1ff5f21d03f6e007de8f5c192d5f33e24a873da4c27950eb
+ - waiting on tx... [success]
+tokens sent to [m/44'/60'/0'/0/482]: 0xacb7a5a87ec822b4fa0e9570d816d64b4f8701e5bfadba7c3dedeb1988f0d9bf
+ - waiting on tx... [success]
+ - fuel returned: 0x39d2817ca6ba3a555d654a078864f61efa400bf28e3672d6204eb9ea5e4757c2
+ - sleeping [10 seconds]
+0x5f712fc8df812bd5b8338c55279debc036155c5886d568e2183ba2be9e6f04d2: 68942.0
+ - fuel sent: 0xa3a9ca20b259af403c5b7e5d7b2ddc71e7b350b2bb7bd65bf308e0222a4505b1
+ - waiting on tx..... [success]
+tokens sent to [m/44'/60'/0'/0/483]: 0x15ab33a76081f555458d66a1a9540a905a0e30bd6fe07140d6719b2b9b65df3f
+ - waiting on tx..... [success]
+ - fuel returned: 0x4528e71bc7b641fbd2a02f4c3f73da512acefdf974cc2ec9aa78aad4453c7ca5
+ - sleeping [69 seconds]
+0xc64b1dafad8fe4521592949e970a1654a9c2f586b79fe40c6844c50ac589a67b: 69227.0
+ - fuel sent: 0x7f7c9b59c4d2db4b6fe732420826b1672a690d1afe88d2f38d76ccf75631e112
+ - waiting on tx............................................................................................................................................................No secret provided. Please set BIP39 or XPK
+0x7754e5fe1ed87edc841e01d7682493288f138dc2fca2156d8cfd9ffd7132c7e5: 0.0
+0x6d0de0f29fc505c68c9639eb535bc075fa85b273bd5fafb346bcba259117ce77: 0.0
+ - fuel returned: 0xbc5e7ccc463eecbc7e00d9d7bede59dc2adc29ce91080fab4da6cef3c6f9f9b5
+0x7ecd2ad9fe1619565e1387626180b685cbce384eb94191158999a4ec6d9cfd5f: 0.0
+0x5f712fc8df812bd5b8338c55279debc036155c5886d568e2183ba2be9e6f04d2: 0.0
+0xc64b1dafad8fe4521592949e970a1654a9c2f586b79fe40c6844c50ac589a67b: 69227.0
+ - fuel sent: 0x95d5a90072508e38420535834477bed1f52a82b8a5a3450ddc992b02f30f1a98
+ - waiting on tx.... [success]
+tokens sent to [m/44'/60'/0'/0/484]: 0x1ca86c1167635ada24a0c73299180b43226473cb7b5482568b3f440902a298cd
+ - waiting on tx.... [success]
+ - fuel returned: 0x95a5ffee0e6ca610435851a6428558f0515d304f2141c4b05e3eefc5eca45edb
+0xa836c3f776bece95049d6a76a3a3e94f1733b412d9b259b7d3ca9f80b301b69f: 52592.00000000001
+ - fuel sent: 0x6e384be39c654e185e94c8c5b9044e86e6e5887ae3bab369a3fd1e06614d8dda
+ - waiting on tx... [success]
+tokens sent to [m/44'/60'/0'/0/485]: 0x316c0a30ec8a45dcea87ad432712b86190f276397ffc3d7f096d34cd7396528f
+ - waiting on tx.... [success]
+ - fuel returned: 0xa42ec66557abf26f6090462e9380b87d09f14600d5482731fabc2f0b8e6c5c9c
+0x791942b9e53ad692a4da50231a81e7f040c7f21ff5744a533f6773a60d8b637c: 14787.999999999998
+ - fuel sent: 0xe5b8105138b3a3522203b6790e0bb6a5ff318e8f5f216936185cf65d5683c37e
+ - waiting on tx.... [success]
+tokens sent to [m/44'/60'/0'/0/486]: 0x7fd4799ca1cca36c4bb53c8a05a0c56e6ac6c8b76247ae5e13f8845d5861375d
+ - waiting on tx.... [success]
+0x9305a22fffca7ec67eedc5f398340083315781a063f1612640ed57e197f37ff7: 63514.0
+ - fuel sent: 0x0f90b4bcca29fe0b6d287da63f574dda2a4534f8508e93e5dbe9fdae1f359b0c
+ - waiting on tx..... [success]
+tokens sent to [m/44'/60'/0'/0/487]: 0xe9d8981fc0d737f7d0337838c4818719643df0c5e2614581e21e6fcdc61383d1
+ - waiting on tx.... [success]
+ - fuel returned: 0xb68033acf7a9fd9a0f5a16b0964ea553b3a58a8ef3211e12dd2f02ace473cb30
+0xe01fce01a6904b87ecfbbcfecc03d42d721482c2f163329fdbaca7f18991d3f8: 17251.0
+ - fuel sent: 0x19087306d669f23e494716170ad1fa8a1cc9ab8c461803aabf58e46ca4a71bc1
+ - waiting on tx.... [success]
+tokens sent to [m/44'/60'/0'/0/488]: 0xa38747636fee333f0f9e162b38ffc490bae7f333f080c5e26038052f48f7aeab
+ - waiting on tx.... [success]
+ - fuel returned: 0x4914cdaf3b79cf3810fb588fe17278b22cdcbefd178fe6024078d86ef37db40a
+0x284739579677a4afd1d154436f861e70623bae7e19a27a58a34556358b797c1d: 20585.0
+ - fuel sent: 0xd9706487a54a85c7b6520017cfb21d0236b1a19747b1064ae1f029b86a4b0559
+ - waiting on tx..... [success]
+tokens sent to [m/44'/60'/0'/0/489]: 0x4a3971d040fecd79d3b38641c0f248d74b9ecdf69a6547cedcccc9b74800658f
+ - waiting on tx.... [success]
+ - fuel returned: 0x004e5ff1288b4f715240d014391b89bc256dab5369dc7ac20131da64dac76305
+0x70eff8102d7f2eede3cff086803f043ecc027ff7a2b9e4ebb6ad7e981ac49ed9: 88715.0
+ - fuel sent: 0x2dbbc5056e63a149b10064e4e7690759c76e4b51015f816890ab2d7385885132
+ - waiting on tx... [success]
+tokens sent to [m/44'/60'/0'/0/490]: 0x3d1caff81de195f9a78e98a90ab99f828182a2c2f2bb1b02c5aba37269a1388d
+ - waiting on tx.... [success]
+ - fuel returned: 0xe2151671b91aabfa2dfb346b3c49374ef04c425b39a1c5e36bd510f787f13e10
+0x57783cd7a609bc5fceab777899e11dd28f89a0310d57f736aae34a349553c17a: 0.0
+0x4d99e67b3fca8ec4b12f1fa832007807bc983968f5df4c81b7719f4e90089b14: 23065.0
+ - fuel sent: 0x9642a3655c836384b40f0e84f5a03119509f06b3b4c2c348bfa68a5e55ccd74d
+ - waiting on tx....................... [success]
+tokens sent to [m/44'/60'/0'/0/492]: 0x6d905fde6740d79724077adc23b9c9a0e9b12a61a45d066d85682478399dc2cb
+ - waiting on tx...... [success]
+ - fuel returned: 0xad7c815b5b2719a0658eb15ef0db2eef60e45b47924cbe24e529dc6fd5eef074
+0xbc7dd68106357f119ca07763b85bd3829eb427b62deec5d1d5599a5a080c242c: 3907.0000000000005
+ - fuel sent: 0xbf306fe9b74ab3afac921073fc00b796e73aa6e7b7ee895078445708ae54e7f9
+ - waiting on tx... [success]
+tokens sent to [m/44'/60'/0'/0/493]: 0x996e8883a1d9422709bbdcfc843d8b3902c54da219188cc4f1768754b1af787f
+ - waiting on tx............ [failed]
+0x7ed318fcf94c2d98ec417b15ada873b19d8b3e5d10faf4fe466091adfae46b27: 86620.0
+ - fuel sent: 0x0f005a258fb89bf8ea0c3097df5723773de2277d7cf1406508b975fda93849c2
+ - waiting on tx.... [success]
+tokens sent to [m/44'/60'/0'/0/494]: 0x44c73d935d2a6d3679812f8c5570a789df13b5c2fe9aa8065cfed943dbb44af4
+ - waiting on tx... [success]
+ - fuel returned: 0xa30a8d21fe9a8b8b134ffecda9b611d12bd42b79d7df986011ce5b7ed8443e01
+0x264137e5c390bb9b313fc341a9bb6b46e9f0670646469f48397b466149fd9ca8: 86955.0
+ - fuel sent: 0xcb981fae46e33b3474ecf4f4c1fc8492272bf91346b07b2ec3c02778c5fd7294
+ - waiting on tx... [success]
+tokens sent to [m/44'/60'/0'/0/495]: 0x37395f784098755855fd3ef6eb8c57a6d9ea99def4758f2703025f267d909dfb
+ - waiting on tx............ [failed]
+0x56e04c8a6064b0229e9ad83ec8d3d386fbe7500dbfb9f4b4bfebdb2536006d88: 82867.0
+ - fuel sent: 0xea3062c274016c4dd6391c4cb1973f7d3435e9da62dba3d0ee708824a3c99ad4
+ - waiting on tx...... [success]
+tokens sent to [m/44'/60'/0'/0/496]: 0xbc5a631f904ce4a8266455644e6659b9a085475de6bf26de92ae1b5c2fb7de60
+ - waiting on tx..... [success]
+ - fuel returned: 0x284ba9c438e381427f0f66bb03aabf4bd2e3ecf14c3d83520075a54e80888a8b
+0x5c1f4c4212d3ef36f5938fe7e6b2cdad54127c7a5a4edab4915242f86e59ca09: 87015.0
+ - fuel sent: 0x6afdeea6be377ca11a7b3df53d2c963074fcef474f6ef3b35cfc1e2ecf954389
+ - waiting on tx............ [success]
+tokens sent to [m/44'/60'/0'/0/497]: 0x2c689fd09392e48d1851e70ab7cd78a3607d5463728368a4adfd49647f2b99ae
+ - waiting on tx.... [success]
+ - fuel returned: 0x7f1290f4be08d70252cd524893cba9d027c159ce5708b5e93cc81f8d215e4c63
+0xee21656f03f6c1c30aeaaa4e345635c78da7f3ad483debefb8cc09191d09e6c0: 64856.0
+ - fuel sent: 0xc8ea919a727b3d4103fc0341141dc2c5696f056a492187975eceed6968b67098
+ - waiting on tx................................................................................................................................................. [success]
+tokens sent to [m/44'/60'/0'/0/498]: 0xbd21c192e530435f430a27b7bb76e25e3815f47975f6cacb49d5947e3cdf48e8
+ - waiting on tx............ [failed]
+0x5697b04214152953ea136a412693be459b1964e1e70bfda12cb2f4b7054ee9d3: 35498.0
+ - fuel sent: 0x3227fa5d26ab9834eda8e2eff150f43844bc0a6d92d59f2ea722c5c21751b1fc
+ - waiting on tx... [success]
+tokens sent to [m/44'/60'/0'/0/499]: 0xe19bc1a7c4221548f159addf32c47a951535bfb3743405feb891f5d7787fde60
+ - waiting on tx.... [success]
+ - fuel returned: 0xada0295e5d9e13a861d16b1fded13ad1899bfd04b158c4c35b6285f40c669f71
+0xdf92b65c830805d3ae473f963a97a431ee8e5a7f7e55e15692a157bc326f15e8: 68638.0
+ - fuel sent: 0x0ccebfa1e4b810cf4cbd71ed0b9b3e67325367d8e811ab7454ab89efea8d929e
+ - waiting on tx........ [success]
+tokens sent to [m/44'/60'/0'/0/500]: 0x13604dbfdf7da5efd251b69fb87ff0120b418d92259d6bb1e6c4f45bac4779ee
+ - waiting on tx.... [success]
+ - fuel returned: 0x9b49af3c9e6c4bed6cc5d95479ae91bdd3ac44afd5c19b0a3fe6b40711e7cd99
+0xe6ba734e18acaee07f916b682071977c484de8624a69b155b74bceec390303b6: 21223.999999999996
+ - fuel sent: 0x7d7e3f5057fd33ef4075bde9b3ca3d017ca3393eef3feb10edc62a8f22a41585
+ - waiting on tx... [success]
+tokens sent to [m/44'/60'/0'/0/501]: 0x95cb7579a087939c3a27a856da7dce58553fbe76ba5616c604d242224309ffdf
+ - waiting on tx............ [failed]
+0x7dd8bc01a218adf7e34fadcecfe2ab1e637052541761b947cd5467aa232026d9: 24686.999999999996
+ - fuel sent: 0x8fc42644d51c912146f6b3669f8558e7165c9aa69cde7bcfe9eaa444273cf9ee
+ - waiting on tx............. [success]
+tokens sent to [m/44'/60'/0'/0/502]: 0x700714697dda4e256fece7a297576e3e9287745788d0e0f0e7d5a6bc09394d3b
+ - waiting on tx............ [failed]
+0x353133a83c53ba02a6133ff28347f37c9fd5ad549398ad1ae131a44b0190aa22: 44856.0
+ - fuel sent: 0x3b00c715be638a9696f9541d46a9db5fde80cdff3a598c0085ba5dd0aba398cb
+ - waiting on tx....... [success]
+tokens sent to [m/44'/60'/0'/0/503]: 0xf01c66183aec89e25c39d1e9dc82c284f1e56f25e20df33e40e8f0831ad3181d
+ - waiting on tx............ [failed]
+0x1f57689cbd3a01927e59108d79ea5407af2e159a72a51e3cfefed0bd6185b7c0: 87432.0
+ - fuel sent: 0x154fc8d3815c1e7eaabb83c4173f9234f7764da9171b7c5c35ded1e9f28ea2e3
+ - waiting on tx.... [success]
+tokens sent to [m/44'/60'/0'/0/504]: 0x320c5cd36d943189391700990ba671d8925003c2fa607d3902c58040a5ef032d
+ - waiting on tx... [success]
+ - fuel returned: 0x5c85240a76d40e05d5cf38d57ac143ae001ce21c39b4a6ef59a6804c151c0cbe
+0x5a92869edf99a632f8793f9e06a09fd467512bd798e6b7536bf500a636934326: 55919.0
+ - fuel sent: 0x40d183d5a345a66d41c957dbd774cdb5decaee2475456d95ab8a7af51a044ddf
+ - waiting on tx....... [success]
+tokens sent to [m/44'/60'/0'/0/505]: 0xe35f54eb113744e205c327b96abf7b7fb411c253dbbe32eea072db962c272dfb
+ - waiting on tx............ [failed]
+0xa17418d3d67fd233ec141a656709df8e1c02a473a7e0aa7a2f00cb4e3331b4d1: 27376.0
+ - fuel sent: 0x4afc8251e408f3fdda3fcf19e8c014494c840cb793fe06f23d1405ce708c6678
+ - waiting on tx..... [success]
+tokens sent to [m/44'/60'/0'/0/506]: 0x1c29be7c016b67bde23c9aba9112a72726c6277011236a712ccfd1807978da16
+ - waiting on tx............ [failed]
+0x18b9c308f121851f3c2667ad24c08a6ff64826da271d27bbbc7156264dc7bd15: 33772.0
+ - fuel sent: 0x790e38c785d8f207184a6b378e30fe65c22ad1dde39cdf285a73663889e0deb0
+ - waiting on tx...... [success]
+tokens sent to [m/44'/60'/0'/0/507]: 0x336d7dcefe79281790ffd9373230e7097dbbfcb42af9ebdf51519dfdfc61b929
+ - waiting on tx............ [failed]
+0xea01fcddb4e5698ba27a53055da023caf5f63d4d0d3e710397df6d83dcd090d9: 72061.0
+ - fuel sent: 0x270f4c3c4d9e7c77f10a79ce2356c036139f013a528e8d83caf82828f4187f46
+ - waiting on tx..... [success]
+tokens sent to [m/44'/60'/0'/0/508]: 0x851b0812800823f2fe73e144d475cea391c87255a07460fb85d23822beb11a32
+ - waiting on tx... [success]
+ - fuel returned: 0x5180f6ebd2c9423fbcaf7ce5dbba19fc97fb3bc2fbdb40f0874cd188f52f60f2
+0x92974b1bc79aff6a99868f6308bd4feec866c60747ce3f87eb25d2fa2e0cf423: 6361.0
+ - fuel sent: 0x4df0f9e27e1c47ce6f1d2fcbc6b4dd94f797c4fdf52b70ccc898a4c2988056f7
+ - waiting on tx........... [success]
+tokens sent to [m/44'/60'/0'/0/509]: 0xd5dfcb99524fc5213351eb18e789a734735c83f5236f78a16761249e0ffd7e5d
+ - waiting on tx............ [failed]
+0x4b3cf08ffee28ba91c7c8a802dc5371afa94b25a558c81c18ec63d3f6b75deb0: 39785.0
+ - fuel sent: 0xa6119e5b0e9670fec3c4222b884b6d03aaf8a31299611a6d22334d63c63d934c
+ - waiting on tx..... [success]
+tokens sent to [m/44'/60'/0'/0/510]: 0x57ae1a3464d910aca49a067e42652fc00d31f0653954fa70f62ec1cc122ec358
+ - waiting on tx..... [success]
+ - fuel returned: 0x46d9ae42d468f9a336c9cfe06334aea15760dc2d180b99f345af7fe753997478
+0x5516bd01fd651b7cc8fbc19a9b6e9d320b20bf96144b512290a26a782323a392: 7288.0
+ - fuel sent: 0x592cfc0d4db4547e9686fc35a1dd4e7bd6a1b6872fd7dd7d21b9695a34a93942
+ - waiting on tx........................... [success]
+tokens sent to [m/44'/60'/0'/0/511]: 0xafa46d51416788a942b9a512620a87b67ac8991f83ecf904fd85d7097317b258
+ - waiting on tx......... [success]
+ - fuel returned: 0x3266c56bd4c3cb3a5905d6c31951f9260e7ef8cec311aceaf5441833ae957749
+0x6d571fe19d39fe60d4a07ef98995cf6fd647212ee3ab61e0ee8bbbb2d440f95d: 39485.0
+ - fuel sent: 0xd14683c531144771656d8c61fdb5dcb70eed0f2ba1cefc55afe1328be33384c8
+ - waiting on tx... [success]
+tokens sent to [m/44'/60'/0'/0/512]: 0x8fa09e364fbe77abf058c1b1d795cf707e6588464a50291f988b532ae621ebcb
+ - waiting on tx... [success]
+ - fuel returned: 0xed3f6f4b8997b16569a888a45281619b55ae5dd1a9b5dec66bf666bc19f53f74
+0x1e54201aa2fe22ca1c3d84d969bffcc1a20c561b04d6cffb9708ce1c984719c5: 73770.0
+ - fuel sent: 0x1d672326906a8229d162d64a1336f2b9d5f6656ad48356899a201f70a58b8127
+ - waiting on tx............ [success]
+tokens sent to [m/44'/60'/0'/0/513]: 0x2474779515e790c1b39d5bcc24db1f320a3abbaf5f2206ca985989625370d2de
+ - waiting on tx.......... [success]
+ - fuel returned: 0xa065b1dda822ae2a755175127b44a06288e8f9e84e3bd2f70a8a7a3c42545fc3
+0x376568044cb63191b4ba8c4a5541e793b3998eabf1f14bd840864e03c460603e: 25966.0
+ - fuel sent: 0xfc3450c39f42e6ff9a68eb1cfd184249d5e81a558212ceaf6c1593f1358eb14e
+ - waiting on tx............................................................................................. [success]
+tokens sent to [m/44'/60'/0'/0/514]: 0xb80506aa659e66e7d5dfdf4c4aadcc86039d1ea4a125b7dd49e10bddc1429e7b
+ - waiting on tx............ [failed]
+0xeddbca78b97454fb809d5919774eabf4383b6dccfcb5c6a7ba94b4c6a807c8b3: 70469.0
+ - fuel sent: 0xbb329d149f0a6f9e9cf5ff4474746a5c17f813042016b9caa859896b3afcb697
+ - waiting on tx.............. [success]
+tokens sent to [m/44'/60'/0'/0/515]: 0x970e64e20e92f5245b1a642b59bcb65fcc9cca3f2a2049e91474e371ada7a9b9
+ - waiting on tx............ [failed]
+0x34650571c5ba1b6e7433921c7e69ae817180e8a49fb27a0c1c1549019676f191: 5.296e+21
+ - fuel sent: 0x9ecbc503bdf61ff2c52eb55d3534454e000cecade6bf2aa8825cf4e1bd4279ab
+ - waiting on tx... [success]
+tokens sent to [m/44'/60'/0'/0/516]: 0x990ce92df414861dd7492f322daabb3ea09c9be12ec97aa997e21e29db08cffa
+ - waiting on tx.... [success]
+ - fuel returned: 0x8b6d724be24cd32c59ea9582b57425a469b7e19991a8d729c4785e85e076a8d6
+0xcfab1c42425f2849e4cf1aa1d3dbef75c8a1a8627900854a1f65abd66b6661f6: 4388.0
+ - fuel sent: 0x9a8f6873717050dac33c2ff3eb0ea0915d6700393212a1b71e4e9b188acfb6ea
+ - waiting on tx... [success]
+tokens sent to [m/44'/60'/0'/0/517]: 0x816067606f47e98f5637f1be34531cabd72f13ee073160980739690e26511732
+ - waiting on tx... [success]
+ - fuel returned: 0x5971e5caf330939fc3c328cd801a2409afcfef4249483a4eab055e523d660e1b
+0xc118459fafd7e44e9fdc32473e82acb05d99ba56635a052c630e53391949cd58: 8705.0
+ - fuel sent: 0xff7214770f9e6f3382d21e08e46a53a7f05c31e6c803a2c49584f40bbc195643
+ - waiting on tx................................................................................................................................................................................................................................................................................................................................................................................. [success]
+tokens sent to [m/44'/60'/0'/0/518]: 0x46c7852fda66e097e2455a842d80aa53082dfcc2f2bc7596d237f07f534185c9
+ - waiting on tx............ [failed]
+0x5eccb124519e4e6a5c5f8e8fc7ac881e883a334f660cad3e89f52f64d5b0bfe6: 28236.0
+ - fuel sent: 0x39a930d96a39c81aac145c22c010e9e4c6d8f115393ebd4ad67191a8df06105b
+ - waiting on tx............................... [success]
+tokens sent to [m/44'/60'/0'/0/519]: 0xb8d407dfdc408a06d17168037d0e66b69084cc8dfb657d60825f6ad67b75e624
+ - waiting on tx.... [success]
+ - fuel returned: 0x49cd37f708a0c2276989ac34a8813f8e71f0f586f9e761d67ce970bfdb048edc
+0x3577f80a684ee184c2a8bb8976e5525722d1dbf635cfe04f58aa646b1c6b05b3: 88479.99999999999
+ - fuel sent: 0x753a221e694f56be1422b8a2a8c283b44236fb338099eaeb695771ed16939d1f
+ - waiting on tx... [success]
+tokens sent to [m/44'/60'/0'/0/520]: 0x72ed4c2a21ef503b3f9a3038e441603d589ebdab800bd3e2148d127cf4e0031b
+ - waiting on tx.... [success]
+ - fuel returned: 0x59cf86da4e26a69556043a0af718361176fa46bf084f27a25dadf1a1d8ccc20f
+0x294974547e2e0a31bc6356cf366aa68ad2615d63d3c6464967a5e2ac161ce276: 62330.0
+ - fuel sent: 0xe217823e1872e07cb357c1a25e558f8b040c3dc600be0cc8cc8a6e0f990d6225
+ - waiting on tx......................... [success]
+tokens sent to [m/44'/60'/0'/0/521]: 0x2b356ca26a85d0d0cd0e79768ad2e5c3ff24185c0582d72610f140179756331b
+ - waiting on tx............ [failed]
+0xf654cf409a546bbbd7e4b0a53dfd32ba6df82ed4d0bd5cf354b09896dacd83da: 23884.0
+ - fuel sent: 0x2ce9ca9ad64e4b6c4b3eda409422b4dda9a160d2291e06ab3a19e0c5b9c81394
+ - waiting on tx... [success]
+tokens sent to [m/44'/60'/0'/0/522]: 0xcf3c7cee43e95b5cd1747fc7172139e6401e8dfc3e30661f11b32d8c566d8e3b
+ - waiting on tx.... [success]
+ - fuel returned: 0x0e3ef4b02873b41fa431ba23fc26bacd0c26268a9f4e4a7286956a20077f9747
+0x2c4018022983d7dc99bc4c1c90f8b7e71efd6e260008a586ff3a60c7caa4ee65: 30729.0
+ - fuel sent: 0x421ea10bf7c62699451aea787a82d934126cdad62a4b48fd459a572ff8ec59ab
+ - waiting on tx............................................................................ [success]
+tokens sent to [m/44'/60'/0'/0/523]: 0xd6b672300ec69096ea47e0bc08271c426bd35b14cb61aa11dd3234235325bcee
+ - waiting on tx............ [failed]
+0x21bb9abdbdc3d6af4ee76dfbe41b959d5ccb12ed33fbfa918efbee77b177df0a: 44507.0
+ - fuel sent: 0xc8d581cf81baa7a876daa885fb225324ffa0bb3947717cdbf44c66589290e06f
+ - waiting on tx........................ [success]
+tokens sent to [m/44'/60'/0'/0/524]: 0xf544b24377c8a121bb8fb353828144e08d9f8c8682b5aeb16e8da8e73717db11
+ - waiting on tx... [success]
+ - fuel returned: 0x23685ebc621bb96fcfc4efbe8f79269006e7d569d2d92bc27cf9b1249bc26d57
+0x45e623f172794653a30db38662354cc64328248b8d080a40dd611c73818a8dad: 30426.0
+ - fuel sent: 0xa862fe41ff8e71eaa8543a634e809fbf2b34c2188a7b499991a61d750eb4c63f
+ - waiting on tx... [success]
+tokens sent to [m/44'/60'/0'/0/525]: 0xb88acdb27d52038055502c75626b1b13f0f8160d4d1284cebf8b5075da2b0fc9
+ - waiting on tx.... [success]
+ - fuel returned: 0xcd348a04d4658f39e493fcb3fadd462e6c458e77dc05b31732601d51627a3b31
+0x2003eb1375ad4cb50dc3052969998ccb61583afdc57f067dd0f8d8c28dcbfb6a: 42070.0
+ - fuel sent: 0x5ae0504ead0a18080bf68f22d529647877448f838e17435eff8cd2e6230092e5
+ - waiting on tx.............. [success]
+tokens sent to [m/44'/60'/0'/0/526]: 0xd7ba9fb632af0d5575e2e122966b4eb56e31b1bbad687b774814c823cb3155af
+ - waiting on tx............ [failed]
+0xdf62b848fbb8dc2811cffd0f1f66019b29945c9f5ff1c0785b55e7da4a7aab5c: 76170.0
+ - fuel sent: 0xbc3c293e9f12e2f72a5841765e1c57199420a37798f4115c180079fde9cc7a8a
+ - waiting on tx.................... [success]
+tokens sent to [m/44'/60'/0'/0/527]: 0x075a742edf726ee8736243f56ece64fa096d50a8f194bea34b299d1729087459
+ - waiting on tx.... [success]
+ - fuel returned: 0x9ab82ef83492facdc7714ea6f683ad7137946af035954ba837b00231b5cf6484
+0x6992778eb27814c13f098effd1c260c6b0921be43e43274c63ad4fa358ddfb40: 4567.0
+ - fuel sent: 0xa11aa70bd7ef0a896a7cc62f5a9a2f4cdbbc0422a965cedd7923b1ae8c0ddf29
+ - waiting on tx.... [success]
+tokens sent to [m/44'/60'/0'/0/528]: 0x4ebcbdcccbdf7262a99a65a12cbc6e788769b96fe13a9a42d6378161993a2292
+ - waiting on tx........... [success]
+ - fuel returned: 0xe88a1fa8a37a34245868752f40cdc79c51b83e3d2c38c3ee3b1fddb22b88e553
+0xbc75d5c258aa996dda9b5fe5bef7477a44ada9f0372a0e1c1a798b1171706ad7: 78142.0
+ - fuel sent: 0x85ca60eba5c0212f3298d86ba07e4ff8baec6809a35be645cbc2fc7421c4fc11
+ - waiting on tx... [success]
+tokens sent to [m/44'/60'/0'/0/529]: 0x3c2a6145ccf8c3b0e0705fdbe6f03f3005e27f0727cce65ea0772637ab0b2c76
+ - waiting on tx......... [success]
+ - fuel returned: 0x88bec2a4d18df811a32860079e79834c058a41617b57481349a33bf0b17878ca
+0x0b52fcfaa5b484b2ff11b1393c7f1b04648b6f60026bfd5e5ee28797ede07645: 55189.0
+ - fuel sent: 0x66304f82fa0cb14c43b042ec466bf3bf2f422c21b9fa1bc8993a515624012dc1
+ - waiting on tx........... [success]
+tokens sent to [m/44'/60'/0'/0/530]: 0xf481a9f07f1bbaa57349e023b106967b3674ac95f7dca0f49ec985f74716cb0d
+ - waiting on tx............ [failed]
+0xc12cf09d65fc00bb039fcbfb34b1988a729dc3fc87875905d08a1e7e3bc6ced7: 36558.0
+ - fuel sent: 0x80f4094bf246165aedeb56d8a720a6394a16b59903fb88cbfcb0aafb17df6353
+ - waiting on tx..... [success]
+tokens sent to [m/44'/60'/0'/0/531]: 0xbdcb08e32fb1a1eaefa77369206d9afc1c3d3629c286ac13ef5d52d2e0435caf
+ - waiting on tx............ [failed]
+0xa9f4a1dd312ffd5addc91b7e316a6e38e8e752dd3ca76ed69130d932e5011519: 63626.0
+ - fuel sent: 0x613f44717e4ae625271b9aec22304fb852324d5d1e07fce371b407edd2b88c91
+ - waiting on tx........................ [success]
+tokens sent to [m/44'/60'/0'/0/532]: 0xf132dff258dc69de5c0461d272e448cbd02ea45c4ba14134005a2325455632e6
+ - waiting on tx............ [failed]
+0x84e3c9cc8e3d09ca21d0b13eed62c9dd4da27a32d821ee8c0a73ee97ec43cc67: 68622.0
+ - fuel sent: 0x0ae47e748e746da9baebea3279d024f67eec469c0db1b86a0edeeed8592c15e1
+ - waiting on tx... [success]
+tokens sent to [m/44'/60'/0'/0/533]: 0xdf66f7b0cd2ad33cd3182a72f6b716f5cc86c99b4e30833058ae8c14a2dc9e01
+ - waiting on tx.... [success]
+ - fuel returned: 0xc393345e7c12904d352b6992288beee6e90140b1f8de305b2327ba683dca0610
+0x4733c841922341a355a99c14133577549394db8179d69a536a48b3156d128580: 51226.0
+ - fuel sent: 0xa04d67707060a94e4a993979e8fd3ceffbac42bfe004216b67ffdc179c267995
+ - waiting on tx... [success]
+tokens sent to [m/44'/60'/0'/0/534]: 0x0d57e8ce421d58237eec3042fccfa7a7f8e9ddf9db41fc8fe52dc49d831ac640
+ - waiting on tx... [success]
+ - fuel returned: 0x8745c7bc5646e247d0c107e8ee25a5d3967c3e4cb10003c246d00a4fb238f764
+0x6de3e6c26911f0d6944cbeb02bbacbe08be9c4125eebac862b33f78806b4bfa1: 61239.0
+ - fuel sent: 0x14b44fc175ae0d42012e1c0847ecba4d104994c854da36e19686932a268f6208
+ - waiting on tx.... [success]
+tokens sent to [m/44'/60'/0'/0/535]: 0xd2a1619f4f3652ee044b9fb514654cbb15c00b929eabf30bc76b46c3c589dd49
+ - waiting on tx............ [failed]
+0x5b772c926ac9f846cae0b79be2454837a31343e89f598eb45e025a0fd08a4ef4: 86143.0
+ - fuel sent: 0x23fc89ebe89cccd617389c6b5e9dfe0cd489349991b45f2cc087008a966b70db
+ - waiting on tx.... [success]
+tokens sent to [m/44'/60'/0'/0/536]: 0x8e08251b50200ef593876e8c51beba123461aee9fa5145eb898c256a5692a414
+ - waiting on tx............ [failed]
+0xc94fe976385bde1f0b3119052ef82968a77c79b748f052ceaa1ed8487ec52dee: 66861.0
+ - fuel sent: 0x7c04950d21c23f757febf148eb88f0576fdcd95ef26ef5c6c68f6a974c6de3a4
+ - waiting on tx... [success]
+tokens sent to [m/44'/60'/0'/0/537]: 0xd44604ceb8a4cecd102a09fe0cbd9a6cb42a64e8dae4f9a341b89aa09b10fd77
+ - waiting on tx.... [success]
+ - fuel returned: 0x91b48da11ef6a874e10e0d74f83b6f1596f1b7bd5adf19e155f49441c55c0320
+0x956c34698aa1ec085f293768d9c32d0e3f4f6ab322c0ca4cbc1c4fb47b672f81: 76587.0
+ - fuel sent: 0x94c55d4aed9c1d31a4c691a2fa52a967179ede496348d157625102bfe67463ba
+ - waiting on tx.............. [success]
+tokens sent to [m/44'/60'/0'/0/538]: 0x5ee17c431f105e611e85c1f3d837574fb00d640257caaf4cf87da2e6de98652f
+ - waiting on tx............ [failed]
+0xc64810aaf8cd1062a43f1c4a50b3c4de29dbf6e1267b4b6aa95c08cc99048acb: 59149.0
+ - fuel sent: 0xe0c9f7e7642b77e4f0bc32288a91733aba6fc73ac646bd091c7d20614878d194
+ - waiting on tx.... [success]
+tokens sent to [m/44'/60'/0'/0/539]: 0x8078bd14c5d974071c0dab4ff907556857b36b41c21180b8943311e623d907bd
+ - waiting on tx... [success]
+ - fuel returned: 0x5b1adef57e257aff7d382b4d91816bf0276a06d35da7176d8489f16f410d7362

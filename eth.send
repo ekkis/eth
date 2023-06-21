@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+
+import eth
+
+opts = eth.args([
+	{'key': 'dest' , 'err': 'destination address'},
+	{'key': 'amt', 'def': '0'},
+	{'key': 'curr', 'def': 'eth'},
+	{'key': 'path', 'def': '0'},
+	{'key': 'secret', 'def': ''}
+])
+
+eth.srv()
+contract = eth.contract(opts['curr'])
+main = eth.node()
+src = eth.node(opts['path'], opts['secret'])
+if eth.topUp(src, 0.01, main):
+	tx = eth.send(opts['dest'], contract, amount = opts['amt'], acct = src)
+	print(tx)

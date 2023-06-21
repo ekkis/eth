@@ -1,0 +1,61 @@
+#!/usr/bin/env python
+
+# this script moves a balance from a given
+# derivation path to a given destination address
+
+import os
+import sys
+import eth
+
+eth.ctrlc()
+opts = eth.args([
+	{'key': 'dest' , 'err': 'destination address'},
+	{'key': 'curr', 'def': 'vow'},
+	{'key': 'path', 'def': '0'}
+])
+
+fuel = 0.01
+eth.srv()
+contract = eth.contract(opts['curr'])
+main = eth.node()
+
+bal = eth.balance(main)
+if bal == 0: sys.exit('No fuel in main account!')
+
+print(f'currency: {opts["curr"]}')
+print(f'fuel premium: {os.environ.get("ETHGAS") or "0%"}')
+print(f'destination: {opts["dest"]}')
+print(f'main: [{main["path"]}] {main["address"]} {bal} ETH\n')
+
+i, stop = eth.rng(opts['path'])
+while True:
+	acct = eth.node(i); i += 1
+	bal = eth.balance(acct, contract)
+	breaking = (stop == 0 and bal <= 0) or (stop > 0 and i > stop)
+
+	print(f'[{acct["path"]}] {acct["address"]} {bal}')
+
+	if bal > 0:
+		tx = eth.topUp(acct, fuel)
+		s = 'topped up: {} ETH' if tx else 'fuel: {} ETH'
+		print(' - ' + s.format(eth.balance(acct["address"])))
+
+		txid = eth.send(opts['dest'], contract, acct)	# transfer all tokens
+		print(f' - tokens sent: {txid}')
+		res = eth.txWait(txid)
+		if res['status'] == 0:
+			if breaking: break
+			else: continue
+
+	if eth.balance(acct) and main['address'] != acct['address']:
+		to = main if breaking else eth.node(i)	# flush fuel [1]
+		tx = eth.sendFuel(to=to, acct=acct)
+		action = 'returned' if breaking else 'forwarded'
+		print(f' - fuel {action}: {tx}')
+
+	if breaking: break
+
+# Notes
+# [1] - this works for processing contiguous ranges where the next address contains
+# tokens to be sent out but in situations where the next address is empty, the fuel
+# is forwarded there and gets stranded (since it's not used and flushed)

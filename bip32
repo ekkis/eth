@@ -1,0 +1,61 @@
+#!/usr/bin/env python3
+
+#
+# SYNOPSIS
+#
+# Call this script to generate a list of node attributes for a given list of derivation paths
+#
+# DESCRIPTION
+#
+# The script can be called with a list consisting of the following:
+# 1. an integer, in which case it's treated as an index appended to the DP
+#    environment variable, which declares the derivation path to use and defaults to 
+#    to m/44'/60'/0'/0/
+# 2. an integer range like 4-9, in which case the range of range is created and handled as
+#    if individual integers had been given e.g. 4 5 6 7 8 9
+# 3. a full derivation path e.g. m/44'/60'/0'/0/12
+# 4. any  of the switches: -p, -k, -x, -a indicating, correspondingly, to the path,
+#    private key, extended privkey, and address for the list generated.  when none of these are
+#    passed, the entire Json object is printed out stdout
+#
+
+import os
+import sys
+import eth
+import argparse
+
+BIP39 = os.environ.get("BIP39")
+XPK = os.environ.get("XPK")
+DP = os.environ.get("DP") or "m/44'/60'/0'/0/"
+
+def get_args():
+    p = argparse.ArgumentParser()
+    p.add_argument("ls", type=str, default='0', nargs='*', help="List of paths")
+    p.add_argument("-a", action='store_true', help="Show only addresses")
+    p.add_argument("-k", action='store_true', help="Show only private keys")
+    p.add_argument("-x", action='store_true', help="Show only extended private keys")
+    p.add_argument("-p", action='store_true', help="Show only paths")
+    return p.parse_args()
+
+def paths(r):
+	ret = []
+	for s in r:
+		if s.isdigit():
+			ret.append([DP + str(s)])
+		elif '-' in s:
+			start, stop = s.split('-')
+			ret.append([DP + str(s) for s in range(int(start), int(stop) + 1)])
+		elif s.startswith('m/'):
+			ret.append([s])
+	return [i for ls in ret for i in ls]
+
+args = get_args()
+all=not (args.k or args.a or args.x or args.p)
+
+for p in paths(args.ls):
+	res=eth.node(BIP39 or XPK, p)
+	if all: print(res)
+	if args.p: print(res['path'])
+	if args.a: print(res['address'])
+	if args.k: print(res['pk'])
+	if args.x: print(res['xprv'])
