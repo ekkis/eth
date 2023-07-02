@@ -24,9 +24,11 @@ opts = eth.args([
 	{'key': 'offset', 'def': '0'}
 ])
 
-if not opts['offset'].isnumeric():
+
+offset = opts['offset'] or 0
+if not offset.isnumeric():
 	sys.exit('Offset must be numeric!')
-offset = int(opts['offset']) or 0
+offset = int(offset)
 
 eth.srv()
 contract = eth.contract(opts['curr'])

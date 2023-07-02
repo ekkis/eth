@@ -110,7 +110,7 @@ def key(secret):
 
 def node(DP = 0, secret = None):
 	global _root_
-	if not _root_:
+	if secret or not _root_:
 		_root_ = child(key(secret))
 	return child(_root_, path(DP))
 
