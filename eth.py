@@ -283,18 +283,19 @@ def sendFuel(to, amount: float = 0.0, acct = None):
 			print(e)
 
 def send(to, contract = None, acct = None, amount = 0):
+	from decimal import Decimal
+	if type(amount) == str: amount = Decimal(amount)
 	if not contract:
 		return sendFuel(to, amount, acct)
 
 	global _root_, srv
 	if not acct: acct = child(_root_, path(0))
-	if type(amount) == str: amount = float(amount)
 
 	if amount == 0:
 		amount = tryBalRaw(acct['address'], contract)
 	else:
 		decimals = tryDecimals(contract)
-		amount = int(amount * 10.0 ** decimals)
+		amount = int(amount * 10 ** decimals)
 
 	if type(to) == dict: to = to['address']
 	to = srv.to_checksum_address(to)
@@ -348,14 +349,16 @@ def args(msgs):
 	i = 1; ret = {}
 	for m in msgs:
 		v = ''
-		if 'env' in m:
-			v = os.environ.get(m['env'])
-		if not v and 'def' in m:
-			v = m['def']
 		if len(sys.argv) > i:
 			v = sys.argv[i]
+		if 'env' in m:
+			v = os.environ.get(m['env'])
 		if not v:
-			sys.exit(err + '\nNo ' + m['err'] + ' provided!')
+			if 'def' in m:
+				v = m['def']
+			else:
+				msg = m['err'] if 'err' in m else m['key']
+				sys.exit(err + '\nNo ' + msg + ' provided!')
 		ret[m['key']] = v
 		i += 1
 	return ret
