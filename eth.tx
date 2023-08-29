@@ -9,4 +9,4 @@ if id == '-l':
 	print(eth.txLogs(eth.arg(2), 'vusd'))
 	sys.exit()
 
-print(eth.txWait(id, 1, 4))
+print(eth.txWait(id, 1, int(eth.arg(2) or 4)))
