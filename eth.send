@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 
+import os
 import sys
 import eth
 
+NOEXEC = os.environ.get('NOEXEC')
 opts = eth.args([
 	{'key': 'dest' , 'err': 'destination address'},
 	{'key': 'amt', 'def': '0'},
@@ -18,6 +20,12 @@ src = eth.node(opts['path'], opts['secret'])
 if contract and not eth.topUp(src, 0.01, main):
 	sys.exit('top up failed!')
 
-txid = eth.send(opts['dest'], contract, amount = opts['amt'], acct = src)
-res = eth.txWait(txid)
-print(txid)
+if eth.balance(src, contract) > 0:
+	txid = eth.send(opts['dest'], contract, amount = opts['amt'], acct = src, hdr = True)
+	if NOEXEC: sys.exit()
+
+	print(txid)
+	res = eth.txWait(txid)
+	if opts['amt'] == 0 and eth.balance(src) > 0:
+		txid = eth.sendFuel(to=main, acct=src)
+		print(f' - fuel returned: {txid}')
