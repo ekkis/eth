@@ -7,6 +7,7 @@ import json
 from eth_account import Account
 from bip32utils import BIP32Key, BIP32_HARDEN
 from web3 import Web3
+from decimal import Decimal
 
 zmok = 'https://api.zmok.io/mainnet/sfbitikqej2f0fzd'
 contracts = {
@@ -144,7 +145,7 @@ def srv(url = zmok):
 	srv = Web3(Web3.HTTPProvider(url))
 	return srv
 
-def txWait(id, sleep = 6, timeout = 10, msg = ' - waiting on tx...'):
+def txWait(id, sleep = 6, timeout = 10, msg = None):
 	if not id:
 		print(' - no transaction id provided!')
 		return
@@ -152,22 +153,25 @@ def txWait(id, sleep = 6, timeout = 10, msg = ' - waiting on tx...'):
 	from web3.exceptions import TransactionNotFound
 	from requests.exceptions import ChunkedEncodingError
 	ret = None
+	status = 'failed', 'success', 'timeout'
+
 	while not ret:
 		try:
 			ret = srv.eth.get_transaction_receipt(id)
 			break
 		except TransactionNotFound as e:
+			if not msg: msg = ' - waiting on tx...'
 			print(msg, end = '', flush = True)
 			msg = '.'
 			timeout -= 1
-			if timeout == 0: break
+			if timeout == 0:
+				ret = {'status': -1}
+				break
 			time.sleep(sleep)
 		except ChunkedEncodingError as e:
 			time.sleep(sleep)
 
-	if not ret: ret = {'status': 0}
-	status = 'success' if ret['status'] == 1 else 'failed'
-	print(' [' + status + ']', flush = True)
+	if msg: print(' [' + status[ret['status']] + ']', flush = True)
 	return ret
 
 def txLogs(id, contract = 'vusd'):
@@ -209,9 +213,9 @@ def balance(address, contract=None):
 	if contract:
 		decimals = tryDecimals(contract)
 		if decimals < 0: raise Exception('Negative decimals!!')
-		return bal / 10.0 ** decimals
+		return Decimal(bal / 10 ** decimals)
 	else:
-		return float(srv.from_wei(bal, 'ether'))
+		return Decimal(srv.from_wei(bal, 'ether'))
 
 def waitBal(acct, contract, val = 0, sleep = 5):
 	if type(acct) == dict: acct = acct['address']
@@ -229,6 +233,7 @@ def topUp(to, amt, fuel = None, sleep = 6):
 	tx = sendFuel(to, amt, fuel)
 	if not tx: return
 	print(f' - fuel sent: {tx}')
+	if NOEXEC: return True
 	stat = txWait(tx, sleep, -1) # waits forever
 	return tx if stat['status'] == 1 else None
 
@@ -271,7 +276,7 @@ def sendFuel(to, amount: float = 0.0, acct = None):
 	}
 	debug(tx)
 	try:
-		if NOEXEC: return
+		if NOEXEC: return True
 		tx = srv.eth.account.sign_transaction(tx, x2b(acct['pk']))
 		return srv.eth.send_raw_transaction(tx.rawTransaction).hex()
 	except Exception as e:
@@ -280,10 +285,9 @@ def sendFuel(to, amount: float = 0.0, acct = None):
 			print(' * sendFuel(): ' + e['message'])
 			print(f' * {acct["path"]} {acct["address"]}: {balance(acct)} eth')
 		else:
-			print(e)
+			print(' * sendFuel(): ' + str(e))
 
-def send(to, contract = None, acct = None, amount = 0):
-	from decimal import Decimal
+def send(to, contract = None, acct = None, amount = 0, hdr = False):
 	if type(amount) == str: amount = Decimal(amount)
 	if not contract:
 		return sendFuel(to, amount, acct)
@@ -308,13 +312,14 @@ def send(to, contract = None, acct = None, amount = 0):
 		'gasPrice': int(srv.eth.gas_price),
 		'gas': 100000
 	})
-	debug(tx)
+	if hdr: print(f'[{amount}]: {acct["address"]} => {to}')
+	debug(f'to: {to}, amount: {amount} ' + str(tx))
 
 	# for gas, review:
 	# https://ethereum.stackexchange.com/questions/110266/how-can-i-catch-error-eventerror-returned-error-insufficient-funds-for-gas
 
 	try:
-		if NOEXEC: return
+		if NOEXEC: return True
 		tx = srv.eth.account.sign_transaction(tx, x2b(acct['pk']))
 		return srv.eth.send_raw_transaction(tx.rawTransaction).hex()
 	except ValueError as e:
