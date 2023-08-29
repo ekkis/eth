@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 # this script generates balances for a list of addresses or private keys
-# piped in e.g.
+# piped in, the -c asks for a cumulative balance e.g.
 #
-#   cat mylist.txt |$0 vow
+#   cat mylist.txt |$0 vow -c
 #
 # or by exploring all the derivation paths, given a secret. the script
 # can be bracketed in the following form:
@@ -45,7 +45,9 @@ if not sys.stdin.isatty():
 		bal = eth.balance(eth.pk2addr(addr), contract)
 			
 		tot += bal
-		print(f'{addr}\t{round(bal, 0)}\t{tot}')
+		msg = f'{addr}\t{bal}'
+		if eth.arg(n) == '-c': msg += f'\t{tot}'
+		print(msg)
 
 	print(f'total={tot}')
 	sys.exit()
