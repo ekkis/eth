@@ -11,7 +11,9 @@ opts = eth.args([
 	{'key': 'curr', 'def': 'eth'},
 	{'key': 'path', 'def': '0'},
 	{'key': 'secret', 'def': None}
-])
+	],
+	'eth.send <dest-addr> [amount = 0] [curr = eth] [path = 0] [secret = <env>]'
+)
 
 eth.srv()
 contract = eth.contract(opts['curr'])

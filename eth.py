@@ -345,11 +345,12 @@ def syntax(o):
 		v += ' = $' + o['env']
 	return a + v + b
 
-def args(msgs):
-	err = ''
+def args(msgs, syntax):
 	if len(sys.argv) == 1:
-		s = ' '.join(map(syntax, msgs))
-		err = '<list> | ' + sys.argv[0] + ' ' + s
+		if not syntax:
+			s = ' '.join(map(syntax, msgs))
+			syntax = '<list> | ' + sys.argv[0] + ' ' + s
+		sys.exit(syntax)
 
 	i = 1; ret = {}
 	for m in msgs:
@@ -363,7 +364,7 @@ def args(msgs):
 				v = m['def']
 			else:
 				msg = m['err'] if 'err' in m else m['key']
-				sys.exit(err + '\nNo ' + msg + ' provided!')
+				sys.exit('\nNo ' + msg + ' provided!')
 		ret[m['key']] = v
 		i += 1
 	return ret
