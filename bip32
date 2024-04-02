@@ -54,6 +54,7 @@ all=not (args.k or args.a or args.x or args.p)
 
 for p in paths(args.ls):
 	res=eth.node(p)
+	[res.pop(k) for k in ['BIP32Key', 'acct']]
 	if all: print(res)
 	if args.p: print(res['path'])
 	if args.a: print(res['address'])
