@@ -53,7 +53,7 @@ args = get_args()
 all=not (args.k or args.a or args.x or args.p)
 
 for p in paths(args.ls):
-	res=eth.node(BIP39 or XPK, p)
+	res=eth.node(p)
 	if all: print(res)
 	if args.p: print(res['path'])
 	if args.a: print(res['address'])
