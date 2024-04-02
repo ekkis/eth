@@ -145,7 +145,7 @@ def srv(url = zmok):
 	srv = Web3(Web3.HTTPProvider(url))
 	return srv
 
-def txWait(id, sleep = 6, timeout = 10, msg = None):
+def txWait(id, sleep = 6, timeout = -1, msg = None):
 	if not id:
 		print(' - no transaction id provided!')
 		return
@@ -309,7 +309,7 @@ def send(to, contract = None, acct = None, amount = 0, hdr = False):
 		'chainId': srv.eth.chain_id,
 		'from': acct['address'],
 		'nonce': nonce,
-		'gasPrice': int(srv.eth.gas_price),
+		'gasPrice': int(srv.eth.gas_price * fuelPremium()),
 		'gas': 100000
 	})
 	if hdr: print(f'[{amount}]: {acct["address"]} => {to}')
