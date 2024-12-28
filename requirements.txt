@@ -1,0 +1,6 @@
+requests
+mnemonic
+eth_account
+bip32utils
+web3
+
