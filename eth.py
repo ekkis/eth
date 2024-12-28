@@ -10,8 +10,9 @@ from web3 import Web3
 from decimal import Decimal
 
 zmok = 'https://api.zmok.io/mainnet/sfbitikqej2f0fzd'
+infura = 'https://mainnet.infura.io/v3/0fbddbe6bf0945df96b87585bb080e65'
 contracts = {
-	'eth': None,
+	'eth': "m/44'/60'/0'/0/",
 	'vow': '0x1BBf25e71EC48B84d773809B4bA55B6F4bE946Fb',
 	'vusd': '0x0fc6C0465C9739d4a42dAca22eB3b2CB0Eb9937A',
 	'usdt': '0xdAC17F958D2ee523a2206206994597C13D831ec7',
@@ -32,7 +33,8 @@ DEBUG = os.environ.get('DEBUG')
 def debug(s):
 	if DEBUG: print("> " + str(s), file=sys.stderr)
 
-DP = os.environ.get('DP') or "m/44'/60'/0'/0/"
+DP = os.environ.get('DP') or contracts['eth']
+
 def path(x = 0, dp = None):
 	if not x: x = 0
 	if isinstance(x, int): x = str(x)
@@ -131,6 +133,11 @@ def contract(symbol = None):
 	if symbol not in contracts:
 		sys.exit('Contract symbol not supported!')
 
+	cnt = contracts[symbol]
+	if type(cnt) == str and cnt.startswith('m/'):
+		global DP; DP = cnt
+		return
+	
 	global srv
 	proxy = impl = contracts[symbol]
 	if not proxy: return None
@@ -140,7 +147,7 @@ def contract(symbol = None):
 
 	return srv.eth.contract(address=proxy, abi=abi(impl))
 
-def srv(url = zmok):
+def srv(url = infura):
 	global srv
 	srv = Web3(Web3.HTTPProvider(url))
 	return srv

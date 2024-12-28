@@ -8,7 +8,7 @@
 # or by exploring all the derivation paths, given a secret. the script
 # can be bracketed in the following form:
 #
-#	export BIP39=...
+#   export BIP39=...
 #   $0 vow 10-20 -z
 #
 # offsets may be passed in the forms: m, m-n, m- and -n
@@ -17,7 +17,12 @@
 #
 # it can also be used to query a single address:
 #
-# $0 0x... vow
+# 	$0 0x... vow
+#
+# or a range of addresses:
+#
+# 	echo "0x...\n0x...\n" |$0 vow
+#
 
 import os
 import sys
@@ -38,6 +43,7 @@ if addr:
 
 tot = 0
 contract = eth.contract(sym)
+
 if not sys.stdin.isatty():
 	for addr in sys.stdin:
 		addr = addr.rstrip()
