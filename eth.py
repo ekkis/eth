@@ -33,9 +33,11 @@ DEBUG = os.environ.get('DEBUG')
 def debug(s):
 	if DEBUG: print("> " + str(s), file=sys.stderr)
 
-DP = os.environ.get('DP') or contracts['eth']
+DP = os.environ.get('DP')
+if not DP.endswith("/"): DP += "/"
 
 def path(x = 0, dp = None):
+	# print(f'x={x}, dp={dp}, DP={DP}')
 	if not x: x = 0
 	if isinstance(x, int): x = str(x)
 	if x.isnumeric(): x = (dp or DP) + x
@@ -72,6 +74,7 @@ def child(key, path = ''):
 			return key
 
 	if type(key) == dict: key = key['BIP32Key']
+	# print(path)
 	for s in path.split("/"):
 		if s == 'm' or s == '': continue
 		i = int(s.rstrip("'"))  
@@ -111,11 +114,11 @@ def key(secret):
 	# ret.dump()
 	return ret
 
-def node(DP = 0, secret = None):
+def node(dp = 0, secret = None):
 	global _root_
 	if secret or not _root_:
 		_root_ = child(key(secret))
-	return child(_root_, path(DP))
+	return child(_root_, path(dp))
 
 def abi(contract):
 	key = 'Y7V344WF7CXFPUZIFB9P3Y5WV8W7IMZUMA'
@@ -133,9 +136,10 @@ def contract(symbol = None):
 	if symbol not in contracts:
 		sys.exit('Contract symbol not supported!')
 
+	global DP
 	cnt = contracts[symbol]
 	if type(cnt) == str and cnt.startswith('m/'):
-		global DP; DP = cnt
+		if not DP: DP = cnt
 		return
 	
 	global srv
